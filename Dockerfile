@@ -2,7 +2,7 @@ FROM golang:latest
 
 ENV CGO_ENABLED=0
 
-COPY * /src/
+ADD . /src/
 
 RUN go generate
 RUN go build
