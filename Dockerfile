@@ -12,4 +12,4 @@ RUN go build
 
 FROM scratch
 
-COPY --from=builder /src/divert /usr/local/bin
+COPY --from=0 /src/divert /usr/local/bin
