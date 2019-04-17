@@ -14,4 +14,4 @@ FROM scratch
 
 COPY --from=0 /src/divert /usr/local/bin
 
-ENTRYPOINT ["divert"]
+ENTRYPOINT ["/usr/local/bin/divert"]
